@@ -178,3 +178,7 @@
 9. <code>&lt;colgroup&gt;</code> - Defines a semantic group of one or more columns in a table for formatting.
 
 10. <code>&lt;col&gt;</code> - Defines a semantic column in a table.
+
+## Semantic tags in action
+
+- 
