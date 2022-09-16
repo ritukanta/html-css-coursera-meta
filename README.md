@@ -1,6 +1,14 @@
 **week 1: HTML in depth**<br>
 
+1. [Course Introduction](#course-introduction)
+1. [Semantic and Meta Tags](#semantics-and-meta-tags)
+
 # Course Introduction
+
+1. [Intro to HTML and CSS in depth](#introduction-to-html-and-css-in-depth)
+1. [How are HTML and CSS used in the real-world?](#how-are-html-and-css-used-in-the-real-world)
+
+---
 
 ## Introduction to HTML and CSS in depth
 
@@ -9,6 +17,8 @@
 - Following the module about HTML, is when all about **CSS**. This part of the course will go beyond basic **styling**. You will learn how to create layouts with grids and flex boxes. You will also learn about CSS **selectors** and how you can combine them to refine the styling of elements on your web pages.
 
 - Not only that, but you'll also learn how to use **pseudo-class selectors** to improve the interactivity of a web page. But there's even more. You will learn how to add effects on web pages using purely CSS and you will cover basic transform and transition animations, as well as more advanced animations using **key frames**.
+
+---
 
 ## How are HTML and CSS used in the real-world?
 
@@ -20,7 +30,16 @@
 
 - CSS gives you control over **color**, **size**, **spacing**, **fonts**, **positioning** and more. One of the fundamental principles of CSS is the **separation of content and style**.
 
+---
+
 # Semantics and Meta Tags
+
+1. [Semantic Tags and and Why We Need Them](#semantics-tags-and-why-we-need-them)
+1. [Practice Quiz](#practice-quiz-semantic-tags)
+1. [Metadata](#metadata)
+1. [Metadata Cheat Sheet](#metadata-cheat-sheet)
+
+---
 
 ## Semantics tags and why we need them
 
@@ -40,6 +59,8 @@
 ```
 
 - There are really lots of semantic tags available to help describe the meaning of your HTML doc. They are:<br>
+
+---
 
 #### Sectioning Tags
 
@@ -62,6 +83,8 @@
 9. <code>&lt;summary&gt;</code> - Specifies the summary or caption of a &lt;details&gt; element.
 
 10. <code>&lt;h1&gt;</code> <code>&lt;h2&gt;</code> <code>&lt;h3&gt;</code> <code>&lt;h4&gt;</code> <code>&lt;h5&gt;</code> <code>&lt;h6&gt;</code> - Headings on the webpage. &lt;h1&gt; indicates the most important heading whereas &lt;h6&gt; indicates the least important.
+
+---
 
 #### Content Tags
 
@@ -90,6 +113,8 @@
 12. <code>&lt;pre&gt;</code> - Used to represent preformatted text. Typically rendered in the web browser using a monospace font.
 
 13. <code>&lt;ul&gt;</code> - Defines an unordered list.
+
+---
 
 #### Inline Tags
 
@@ -135,6 +160,8 @@
 
 21. <code>&lt;var&gt;</code> - The containing text is a variable in a mathematical expression.
 
+---
+
 #### Embedded content and media tags
 
 1. <code>&lt;audio&gt;</code> - Used to embed auido in webpages.
@@ -156,6 +183,8 @@
 9. <code>&lt;source&gt;</code> - Specifies media resources for picture, audio and video elements.
 
 10. <code>&lt;svg&gt;</code> - Used to define Scalable vector Graphics within the web page.
+
+---
 
 #### Table Tags
 
@@ -179,6 +208,181 @@
 
 10. <code>&lt;col&gt;</code> - Defines a semantic column in a table.
 
-## Semantic tags in action
+---
 
-- 
+## Practice Quiz: Semantic Tags
+
+1. **What is the purpose of semantic HTML tags?**<br>
+   _ans._ To describe the meaning of the HTML doc.
+
+2. **What is the impact of using semantic tags in your HTML doc?**<br>
+   _ans._ It allows search engines to understand the HTML doc and allows accessibility software to understand the HTML doc.
+
+3. **What type of content is the &lt;article&gt; semantic HTML element appropriate for?**<br>
+   _ans._ Blog posts, New articles, and Forum posts.
+
+4. **Which element is most suitable for describing the navigation of the webpage?**<br>
+   _ans._ &lt;nav&gt;
+
+5. **You need to add a copyright notice to the bottom of your webpage, which semantic html tag is most suitable to use?**<br>
+   _ans._ &lt;footer&gt;
+
+6. **You need to indicate that an action of text in a &lt;p&gt; element is important. Which semantic tag whould you use?**<br>
+   _ans._ &lt;strong&gt;
+
+7. **You need to display a list of descriptions on a webpage. Which tag is best-suited semantically?**<br>
+   _ans._ &lt;dl&gt;
+
+---
+
+## Metadata
+
+- It is pretty clear that each person uses a search engine on a web browser to find their favorite things or their queries. Everytime you do a searh, the search engine returns a list of results that are relevant to the searched keywords, but how does actually happen?
+
+- A major part of launching a website is a process called **Search Engine Optimization** or **SEO**. This process involves making improvements to a website's content semantics and delivery to improve its ranking in search results. When a search engine analyzes an htnl doc of a website, it finds a link to another html doc, it follows the link to that document and continues following links until it is finished analyzing the entire site. Every search engine has its own algorithm for ranking websites based on the content of sites. But for now just let's focus on how **meta** tags influence the ranking of websites.
+
+- Meta tags define metadata about a webpage. It is the data about other data which in this case is data about the webpage. Meta tags are usually added inside the **head** element of an html doc, and content of head element is not displayed on the web browser. Remember that when we called out some basic examples, there is no closing tag for meta tags, unlike other elements. Each meta element consists of two attributes: **name** and **content**. The **name** attribute defines the name of the meta data of that certain website while **content** specifies the value of the meta data.
+
+- Let's checkout some of the examples of meta data. The **author** metadata specifies the author of the webpage. Here name attribute is author and the content can be a person or company.
+
+---
+
+## Metadata Cheat Sheet
+
+### Name
+
+- The name of the property can be anything you like, although browsers usually expect a value they understand and can take an action upon. An example would be <code>&lt;meta name="author" content="name of author"&gt;</code> to state the author of the page.
+
+### Content
+
+- The content field specifies the property's value. For example, you can use <code>&lt;meta name="language" content="english"&gt;</code>, to specify the language of the webpage to search engines.
+
+### Charset
+
+- The charset is a special field that lets you specify the character encoding used for the page so that the browser can display it properly. The most frequently used is **UTF-8**, and you would add it to your HTML header as: <code>&lt;meta charset="UTF-8"&gt;</code>.
+
+### HTTP-equiv
+
+- This attribute stands for **HTTP equivalent**, and it's used to simulate http response headers. This is rare to see, and it's recommended to use http headers over html http-equiv meta tags. For example, the following tag would instruct the browser to refresh the page every 30 minutes: <code>&lt;meta http-equiv="refresh" content="30"&gt;</code>.
+
+---
+
+## Basic Meta Tags(meta tags for SEO)
+
+- The description meta tag provides a brief description of the webpage.
+
+```html
+<meta name="description" />
+```
+
+- Title meta tag defines the title of the webpage.
+
+```html
+<meta name="title" />
+```
+
+- Author meta tag specifies the author of the page.
+
+```html
+<meta name="author" content="name" />
+```
+
+- Language meta tag specifies the language.
+
+```html
+<meta name="language" content="english" />
+```
+
+- The following meta tag tells search engines how to crawl or index a certain page.
+
+```html
+<meta name="robots" content="index, follow" />
+```
+
+- The following says Google not to show the sitelinks search box for your page when showing search results.
+
+```html
+<meta name="google" />
+```
+
+- This tells Google you don't want to provide an automatic translation for your page if the user uses a different language.
+
+```html
+<meta name="googlebot" content="notranslate" />
+```
+
+- This specifies the last modified date and time on which you have made certain changes.
+
+```html
+<meta name="revised" content="Friday, September 16th, 2022, 12:09pm" />
+```
+
+- The following specifies the expected audience for your page.
+
+```html
+<meta name="rating" content="safe for kids" />
+```
+
+- This specifies a Copyright.
+
+```html
+<meta name="copyright" content="Copyright 2022" />
+```
+
+---
+
+### HTTP-equiv Tags
+
+- This describes the format of the doc returned by the server.
+
+```html
+<meta http-equiv="content-type" content="text/html" />
+```
+
+- This specifies the format of the styling doc.
+
+```html
+<meta http-equiv="default-style" />
+```
+
+- Following specifies the duration of the page before it's considered state.
+
+```html
+<meta http-equiv="refresh" />
+```
+
+- This specifies the language of the page.
+
+```html
+<meta http-equiv="Content-language" />
+```
+
+- Following instructs the browser how to cache your page.
+
+```html
+<meta http-equiv="Cache-Control" content="no-cache" />
+```
+
+---
+
+### Responsive Design Meta Tags
+
+- This indicates that telephone numbers should appear as hypertext links that can be clicked to make a phone call.
+
+```html
+<meta name="format-detection" content="telephone=yes" />
+```
+
+- It specifies that the page can be properly visualized on mobile devices.
+
+```html
+<meta name="HandheldFriendly" content="true" />
+```
+
+- The following specifies the area of the window in which web content can be seen.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+---
