@@ -8,8 +8,6 @@
 1. [Intro to HTML and CSS in depth](#introduction-to-html-and-css-in-depth)
 1. [How are HTML and CSS used in the real-world?](#how-are-html-and-css-used-in-the-real-world)
 
----
-
 ## Introduction to HTML and CSS in depth
 
 - The next HTML section will focus on bringing websites to life with media elements. You will learn how to embed video and audio players and even **iframes**.
@@ -17,8 +15,6 @@
 - Following the module about HTML, is when all about **CSS**. This part of the course will go beyond basic **styling**. You will learn how to create layouts with grids and flex boxes. You will also learn about CSS **selectors** and how you can combine them to refine the styling of elements on your web pages.
 
 - Not only that, but you'll also learn how to use **pseudo-class selectors** to improve the interactivity of a web page. But there's even more. You will learn how to add effects on web pages using purely CSS and you will cover basic transform and transition animations, as well as more advanced animations using **key frames**.
-
----
 
 ## How are HTML and CSS used in the real-world?
 
@@ -30,16 +26,13 @@
 
 - CSS gives you control over **color**, **size**, **spacing**, **fonts**, **positioning** and more. One of the fundamental principles of CSS is the **separation of content and style**.
 
----
-
 # Semantics and Meta Tags
 
 1. [Semantic Tags and and Why We Need Them](#semantics-tags-and-why-we-need-them)
 1. [Practice Quiz](#practice-quiz-semantic-tags)
 1. [Metadata](#metadata)
 1. [Metadata Cheat Sheet](#metadata-cheat-sheet)
-
----
+1. [Bare Bones Layout](#bare-bones-layout)
 
 ## Semantics tags and why we need them
 
@@ -59,8 +52,6 @@
 ```
 
 - There are really lots of semantic tags available to help describe the meaning of your HTML doc. They are:<br>
-
----
 
 #### Sectioning Tags
 
@@ -83,8 +74,6 @@
 9. <code>&lt;summary&gt;</code> - Specifies the summary or caption of a &lt;details&gt; element.
 
 10. <code>&lt;h1&gt;</code> <code>&lt;h2&gt;</code> <code>&lt;h3&gt;</code> <code>&lt;h4&gt;</code> <code>&lt;h5&gt;</code> <code>&lt;h6&gt;</code> - Headings on the webpage. &lt;h1&gt; indicates the most important heading whereas &lt;h6&gt; indicates the least important.
-
----
 
 #### Content Tags
 
@@ -113,8 +102,6 @@
 12. <code>&lt;pre&gt;</code> - Used to represent preformatted text. Typically rendered in the web browser using a monospace font.
 
 13. <code>&lt;ul&gt;</code> - Defines an unordered list.
-
----
 
 #### Inline Tags
 
@@ -160,8 +147,6 @@
 
 21. <code>&lt;var&gt;</code> - The containing text is a variable in a mathematical expression.
 
----
-
 #### Embedded content and media tags
 
 1. <code>&lt;audio&gt;</code> - Used to embed auido in webpages.
@@ -184,8 +169,6 @@
 
 10. <code>&lt;svg&gt;</code> - Used to define Scalable vector Graphics within the web page.
 
----
-
 #### Table Tags
 
 1. <code>&lt;table&gt;</code> - Defines a table element to display tabular data within the web page.
@@ -207,8 +190,6 @@
 9. <code>&lt;colgroup&gt;</code> - Defines a semantic group of one or more columns in a table for formatting.
 
 10. <code>&lt;col&gt;</code> - Defines a semantic column in a table.
-
----
 
 ## Practice Quiz: Semantic Tags
 
@@ -233,8 +214,6 @@
 7. **You need to display a list of descriptions on a webpage. Which tag is best-suited semantically?**<br>
    _ans._ &lt;dl&gt;
 
----
-
 ## Metadata
 
 - It is pretty clear that each person uses a search engine on a web browser to find their favorite things or their queries. Everytime you do a searh, the search engine returns a list of results that are relevant to the searched keywords, but how does actually happen?
@@ -244,8 +223,6 @@
 - Meta tags define metadata about a webpage. It is the data about other data which in this case is data about the webpage. Meta tags are usually added inside the **head** element of an html doc, and content of head element is not displayed on the web browser. Remember that when we called out some basic examples, there is no closing tag for meta tags, unlike other elements. Each meta element consists of two attributes: **name** and **content**. The **name** attribute defines the name of the meta data of that certain website while **content** specifies the value of the meta data.
 
 - Let's checkout some of the examples of meta data. The **author** metadata specifies the author of the webpage. Here name attribute is author and the content can be a person or company.
-
----
 
 ## Metadata Cheat Sheet
 
@@ -264,8 +241,6 @@
 ### HTTP-equiv
 
 - This attribute stands for **HTTP equivalent**, and it's used to simulate http response headers. This is rare to see, and it's recommended to use http headers over html http-equiv meta tags. For example, the following tag would instruct the browser to refresh the page every 30 minutes: <code>&lt;meta http-equiv="refresh" content="30"&gt;</code>.
-
----
 
 ## Basic Meta Tags(meta tags for SEO)
 
@@ -329,8 +304,6 @@
 <meta name="copyright" content="Copyright 2022" />
 ```
 
----
-
 ### HTTP-equiv Tags
 
 - This describes the format of the doc returned by the server.
@@ -363,8 +336,6 @@
 <meta http-equiv="Cache-Control" content="no-cache" />
 ```
 
----
-
 ### Responsive Design Meta Tags
 
 - This indicates that telephone numbers should appear as hypertext links that can be clicked to make a phone call.
@@ -385,4 +356,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
----
+## Bare Bones Layout
+
+- An important part of being a web devloper is not only the tools you use, such as your integrated devlopment environment, but also the repository of knowledge and code templates you build up over time.
+
+- Let's learn one of these templates, which will help in building webpages easily and quickly. In our example template, we've an html document called <code>index.html</code>, a JS folder and a CSS folder. Inside the JS folder, there's a file called <code>script.js</code> and there's no content in this file for now. Similarly there's a file called <code>style.css</code> inside the CSS folder. Again the style.css is all empty. It is best to use some example script.js and style.css files in their respective directories.
+
+- In this basic template, remember that the style.css file is always placed inside the head element of index.html, using the <code>&lt;link&gt;</code> tag. Like that the script.js can be linked using <code>&lt;script&gt;</code>, inside the footer of body element.
+
+## Practice Quiz: Metadata
+
+1. **What are some of the main characteristics of meta tags?**<br>
+   _ans._ They define metadata about an HTML document, namely information about data; they don't have a visual representation in your pages; they are very important for SEO.
+
+2. **What are some of the most important Meta tags you should use for good SEO?**<br>
+   _ans._ Description, Title, Image alt attributes.
+
+3. **Which meta tag is used to specify the character encoding for the HTML document?**<br>
+   _ans._ charset
+
+4. **Which meta tag and properties do you need to set to make your pages responsive in desktop and mobile devices?**<br>
+   _ans._
+
+```html
+<meta name="”viewport”" content="”width" ="window-width," initial-scale="1”" />
+```
+
+5. **How do you tell Google you don't want to provide an automation translation for your page if the user uses a different language?**<br>
+   _ans._
+
+```html
+<meta name="”googlebot”" content="”notranslate”" />
+```
+
+6. **Which statements are true about HTTp-equiv tags?**<br>
+   _ans._ They can simulate HTTP response headers; they are useful if you don't have access to the server configuration.
+
+## Layout Design
+
+- As you build web pages throughout your career, you'll notice that many pages follow similar layouts and structures. This is the outcome of many years of researh into user interface design and user experience.
+
+### Top Navbar Layout
+
+- Websites often have a top navbar layout to provide a set of essential anchor links to the user. These typically link to the main areas of the website, such as product pages. This provides the visitor to the website with a consistent navigation experience.<br>
+  ![Navbar layout](../main/images/navbar-layout.png)
+
+### Carousel Layout
+
+- Product and online-shopping websites often use a large carsoul on their homepage to highlight their featured products, offers and discounts. The carousel contains content items that will keep rotating through the carousel area at a fixed interval.<br>
+  ![Carousel layout](../main/images/carousel-layout.png)
+
+### Blog Layout
+
+- The blog layout is used to feature multiple content items of differing importance. It is often seen on news websites where new articles will appear on the page each day based on current happenings.<br>
+  ![Blog layout 1](../main/images/blog-layout-1.png)
+
+- The layout typically features different-sized feature areas followed by a series of article summary areas that link to full articles.
+  ![Blog layout 2](../main/images/blog-layout-2.png)
+
+### Dashboard Layout
+
+- Dashboard layouts are often used in enterprise software for managing various web applications. They typically feature a sidebar for navigation with the main content area containing forms for configuration or reporting data such as graphs and tables. This trendy layout provides a good user experience for business users.
+  ![Dashboard layout](../main/images/dashboard-layout.png)
