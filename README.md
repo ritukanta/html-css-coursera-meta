@@ -33,6 +33,9 @@
 1. [Metadata](#metadata)
 1. [Metadata Cheat Sheet](#metadata-cheat-sheet)
 1. [Bare Bones Layout](#bare-bones-layout)
+1. [Practice Quiz: Metadata](#practice-quiz-metadata)
+1. [Layout Design](#layout-design)
+1. [UX with Meta tags](#ux-with-meta-tags)
 
 ## Semantics tags and why we need them
 
@@ -418,3 +421,75 @@
 
 - Dashboard layouts are often used in enterprise software for managing various web applications. They typically feature a sidebar for navigation with the main content area containing forms for configuration or reporting data such as graphs and tables. This trendy layout provides a good user experience for business users.
   ![Dashboard layout](../main/images/dashboard-layout.png)
+
+## UX with Meta tags
+
+- Social networks are a great tool to share content with friends and family, and even with co-workers and business partners. When you share a link, most social networks generate a preview of the link to let users know what the shared webpage about.
+
+- You will learn how Meta tags help webpages create preview of other webpages. By using Meta tags to control what information is displayed to users, you can get more clicks when you share your websites. But the meta tags web devlopers use this purpose are different from the traditional SEO Meta tags as the SEO Meta tags are oriented towards search results, not direct links.
+
+- Facebook's rapid growth led to millions of users sharing thousands of links everyday. To improve the UX, they had to find a way to display information about a website before a user clicks on the link. To address this challenge, Facebook established the **Open Graph Protocol** in 2010. The Open Graph Protocol is set of Metadata rules that allow webpages to describe themeselves to social networks.
+
+- There are a lot of Meta tags available within Open Graph Protocol, but before we dive into that, let's see how the Open Graph Protocol Metadata is defined. We've already learned that Meta tags are usually placed inside the <code>&lt;head&gt;</code> element of an html document, the Open Graph Protocol also uses Meta tags added to the head element, but there's a slight difference.
+  <br>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Regular SEO oriented Meta tags -->
+    <meta name="author" content="Ritukanta Reddy" />
+
+    <!-- One of the Open Graph Protocol Meta tags -->
+    <meta property="og:title" content="My First Web Page" />
+  </head>
+  <body></body>
+</html>
+```
+
+- The Open Graph Protocol use the <code>property</code> attribute instead of <code>name</code> attribute, to define the Metadata name. Then, like regular SEO Meta tags, it uses the <code>content</code> attribute to define the Metadata value. Each property in the Open Graph Protocol starts with <code>og</code> followed by a colon (og:), as a convention to identify it as an Open Graph Protocol related tag.
+
+- The Open Graph Protocol requires that you must always include four properties on a webpage. There are **title**, **type**, **url** and **image**.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- title property of Open Graph Protocol -->
+    <meta property="og:title" content="My First Web Page" />
+
+    <!-- type property -->
+    <meta property="og:type" content="website" />
+
+    <!-- url property -->
+    <meta property="og:url" content="https://example.com/" />
+
+    <!-- image property -->
+    <meta property="og:image" content="https://example.com/me.png" />
+  </head>
+  <body></body>
+</html>
+```
+
+- The title property defines the title of the page, this is the text that will appear in the preview. The type property defines the type of content, such as website, videos, music or article. The URL property defines the permanent web address that the social networks must use for the specific page. The image property defines a url to an image that must display when the website is shared. Together these Open Graph Protocol properties enables social media platforms to create a preview of the shared web link.
+
+- There are also several other optional properties: the description property provides a description of the webpage. The locale property describes the language and territory of the webpage's content. And the site_name property describes the name of the overall website that the webpage belongs to.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- other Open Graph Protocol optional properties -->
+    <meta
+      property="og:description"
+      content="My webpage is all about bla bla bla!"
+    />
+
+    <!-- "en" stands for English language and "US" stands for United States, territory -->
+    <meta property="og:locale" content="en_US" />
+
+    <meta property="og:site_name" content="Dale's Webpage" />
+  </head>
+  <body></body>
+</html>
+```
