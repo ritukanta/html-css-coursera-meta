@@ -29,13 +29,18 @@
 # Semantics and Meta Tags
 
 1. [Semantic Tags and and Why We Need Them](#semantics-tags-and-why-we-need-them)
-1. [Practice Quiz](#practice-quiz-semantic-tags)
+1. [Practice Quiz: Semantic tags](#practice-quiz-semantic-tags)
 1. [Metadata](#metadata)
 1. [Metadata Cheat Sheet](#metadata-cheat-sheet)
 1. [Bare Bones Layout](#bare-bones-layout)
 1. [Practice Quiz: Metadata](#practice-quiz-metadata)
 1. [Layout Design](#layout-design)
 1. [UX with Meta tags](#ux-with-meta-tags)
+1. [Social Media Cards](#social-media-cards)
+1. [Setting Up a Social Media Card](#setting-up-a-social-media-card)
+1. [Practice Quiz: Open Graph Protocol](#practice-quiz-open-graph-protocol)
+1. [Practice Quiz: Semantic and Meta Tags](#practice-quiz-semantic-and-meta-tags)
+1. [Additional Resources](#additional-resources-semantic-and-meta-tags)
 
 ## Semantics tags and why we need them
 
@@ -493,3 +498,55 @@
   <body></body>
 </html>
 ```
+
+## Social Media Cards
+
+- Before Facebook introduced the **Open Graph Protocol (OGP)**, search engine web crawlers, including social media websites, used the internal heuristics of a website to make the best possible guess in terms of the title, description, and preview images to be used for the content. This often led to social networks not completely successfully interpreting the post or information shared in the URL provided. Even today sometimes when you open a link for a website, the preview generated will be an out-of-scale image or a random image that is possibly embedded somewhere within the web page. This is where meta tags come in to help the end-user take better control of their content.
+
+#### Need for social media cards
+
+- With the number of users and the use of internet marketing on the rise, user attention is the currency. It is said that a picture is worth a thousand words and the internet is a living proof of it: a caption and image can drive users towards or away from a website. The title and description shared with an URL should summarize the contents of a web page. In some cases, it may refer to generic information about the entire website. While for others you may tailor the social media (SM) card for a specific page on a website that you’re sharing. ‘type’ is an important OGP tag in SM cards that help describe the details of a link such as if it’s a book, article, movie and so on, and provide more detailed metadata for specific types. For example, in case of the music type, you can add details for the song, album, duration or any other information about the song. For a regular user scrolling through social media, the link provided with the image preview has only one chance and a moment’s attention to make a good impression. In such cases, the role of social media cards becomes very important.
+
+#### Social media cards and SEO
+
+- The internet today is an interconnected graph that is internally a web of URL links, web crawlers, and search engine optimization tools. Together, a web page’s image and title are the store front to invite the user. But the social media cards also play an important role in boosting the rankings for the web crawlers used by search engines. They provide the crawlers with the necessary information to build metadata that eventually helps in ranking websites. Additionally, it also helps track traffic to your website.
+
+- While it’s advised to stick to the required tags in social media cards, a developer can also use auxiliary tags that may be suitable. For example, the use of the video tag that helps to play in-line when displayed on social media websites like Meta.
+
+## Setting Up a Social Media Card
+
+- **Little Lemon** restaurant has hired a marketing firm to help them advertise their business.
+
+- So now we've to prepare a web page so that can be linked to social media platforms. At a minimum, I have to add four pieces of metadata required by the protocol.
+
+```html
+<!-- four mandatory social media meta tags and metadata(Open Graph Protocol) -->
+<meta property="og:title" content="Our Menu" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="logo.png" />
+<meta property="og:url" content="https://littlelemon.com" />
+```
+
+- So I have added four meta tags inside the <code>head</code> element of my <code>index.html</code>.
+
+- On the first meta tag, I add the <code>property</code> attribute and give it a value of <code>og:title</code>, followed by the <code>content</code> attribute with its value 'Our Menu'. This metadata is the title that will be displayed in the preview on social media platforms.
+
+- On the second metadata, for the property attribute I add value of <code>og:type</code> and I add the content attribute and set its value to 'website'. This metadata describes social media platforms that this content being shared is a website.
+
+- On the third meta tag, I add the property attribute and set its value to <code>og:image</code>. I then add logo.png' to the content attribute. This metadata helps in previewing our web page's logo. So it's good to link our restaurant logo to it.
+
+- On the fourth meta tag, I add the property attribute and set its value to <code>og:url</code>. And I then add the content attribute to set to a value of our main website link i.e. "https://littlelemon.com". The webpage is now ready to shared but however, there is some optional metadata I can add to provide extra information to the social media platforms. So I'll add three more meta tags inside the <code>head</code> element.
+
+- On the first one, I add the property attribute and set its value to <code>og:description</code> and then add "Little Lemon restaurant is a family-owned restarant, focused on traditional recipes ......" to the content attribute.
+
+- On the second meta tag, I add the property attribute and set its value to <code>og:locale</code>. Then I add the content value to "en_US". This clearly specifies that the website is written and read in US English.
+
+- On the last one, I add property attribute to give it a value <code>og:site_name</code>. I then add the content attribute and set its value to "Little Lemon" as it would our main website name.
+
+- The Little Lemon website is now ready for big social media campaign.
+
+## Practice Quiz: Open Graph Protocol
+
+## Practice Quiz: Semantic and Meta Tags
+
+## Additional Resources: Semantic and Meta Tags
