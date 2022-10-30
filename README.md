@@ -547,6 +547,74 @@
 
 ## Practice Quiz: Open Graph Protocol
 
+1. **How does the Open Graph Protocol (OGP) name the meta tags?**<br>
+   _ans._ using property attribute
+
+1. **Each property in the OGP starts with "ogp:".**<br>
+   _ans._ False. It is <code>og:</code>.
+
+1. **Which property should be used to define a URL of an image that must display when the website is shared on social media?**<br>
+   _ans._ <code>og:image</code>
+
+1. **Which property is used to define the language of the content being shared?**<br>
+   _ans._ <code>og:locale</code>
+
+1. **Which property would mention the name of the website?**<br>
+   _ans._ <code>og:site_name</code>
+
+1. **When sharing your blog post, which property would you use to provide the link of the actual post?**<br>
+   _ans._ <code>og:url</code>
+
 ## Practice Quiz: Semantic and Meta Tags
 
+1. **When setting up viewpost metadata for mobile experiences, the ideal suggested value for 'initial-scale' is:**<br>
+   _ans._ 1.0
+
+1. **True or False. The viewpost metadata can impact Search Engines rankings.**<br>
+   _ans._ True
+
+1. **Which meta tags are used for SEO?**
+   _ans._ Author; Description; Viewpost
+
+1. **Which are the required properties while making social media cards using OGP?**<br>
+   _ans._ image; type; title
+
+1. **Which element semantically divides your article content into parts that cover a specific topic?**<br>
+   _ans._ &lt;section&gt;
+
+1. **When defining a social media card, how would you define the title?**<br>
+   _ans._ <code>&lt;meta property=”og:title” content=”my title”/&gt;</code>
+
+1. **True or False. More than one header element can exist in an HTML document?**<br>
+   _ans._ True
+
+1. **When required to define a page refresh, which attribute value in &lt;meta&gt; must be set?**<br>
+   _ans._ content; http-equiv
+
 ## Additional Resources: Semantic and Meta Tags
+
+- The following resources will be helpful as additional references in dealing with different concepts related to the topics you have covered in this section:
+
+- [HTML meta tags](https://www.dofactory.com/html/metatags)
+
+- [Semantic elements](https://www.freecodecamp.org/news/semantic-html5-elements/)
+
+- [Simple bare bones HTML webpage](https://www.instructables.com/Bare-Bones-Web-Page/)
+
+- [HTML5/CSS bare-bones newsletter template](https://www.vandelaydesign.com/newsletter-tutorial/)
+
+- [Add open graph social media metadata - Twitter](https://www.digitalocean.com/community/tutorials/how-to-add-twitter-card-and-open-graph-social-metadata-to-your-webpage-with-html)
+
+- [Essential meta tags for social media](https://css-tricks.com/essential-meta-tags-social-media/)
+
+- [The meta element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
+
+- [Open graph protocol](https://ogp.me/)
+
+- [Using open graph protocol on website](https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/)
+
+- [Meta OGP guide for webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
+
+- [Bootstrap with HTML](https://www.bootstrapdash.com/blog/use-bootstrap-with-html)
+
+- [Bootstrap Layout Examples](https://getbootstrap.com/docs/5.2/examples/)
