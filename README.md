@@ -865,3 +865,66 @@
 - Now we should know the reason why we added the ID attribute in the input element earlier, because it allows us to associate a label with each input element. Also the labels improve the user experience and assist accessibility software and understanding the form. In the last div element, add the <code>button</code> element and set the type attribute to "submit".
 
 ## Making the most of client-side validation
+
+- Have you ever completed a form online and then after you've clicked on the submit button, one of the fields turned red. This happens when a field is empty or if a value is too long or too short.
+
+- As a developer, you can use HTML and CSS to guide users to enter the correct formatted data in the fields and in this way, save the web server resources. In this lesson, we will learn more about the capabilities of client-side validation and how to use CSS to effectively alert users when data format is incorrect. There are several attributes for <code>input</code> element in HTML to validate the user data.
+
+- Let's examine a Login form, where the web server needs a username and password to get submitted by using "Submit" or "Signin" button. What if the web server has no required format of user ID and password? This is surely the waste of web server and less secure. This is where server-side validation prevents processing of the request, a HTTP requst was still submitted though.
+
+- Let's improve this form by using-client side validation to ensure the user eneters values of both fields. The <code>required</code> attribute helps us to alert the user telling the filed is empty and the submission request made by the user will not get submitted to the server.
+
+```html
+<form method="post">
+  <div>
+    <label for="username">Username</label><br />
+    <input type="text" name="username" id="username" required />
+  </div>
+  <div>
+    <label for="user_password">Password</label><br />
+    <input type="password" name="user_password" id="user_password" required />
+  </div>
+  <div>
+    <button type="submit">Signin</button>
+  </div>
+</form>
+```
+
+- Now the user experience seems good but the user inputs being too short or too long can also make unnecessary submissions for the web server. To specify certain length of inputs, we can use <code>minlength=""</code> and <code>maxlength=""</code> attributes for setting atleast characters and maximum characters respectively.
+
+```html
+<form method="post">
+  <label for="user">UserID</label><br />
+  <input
+    type="text"
+    name="user"
+    id="user"
+    required
+    minlength="3"
+    maxlength="9"
+  />
+
+  <label for="pass">Password</label><br />
+  <input
+    type="password"
+    name="pass"
+    id="pass"
+    required
+    minlength="3"
+    maxlength="6"
+  />
+
+  <br />
+  <input type="submit" value="Submit" />
+</form>
+```
+
+- Let's focus on the way the browser communicates errors to the users, like a form field that turns red when the data format is invalid, this can be readily implemented using CSS. To highlight a field in red when the data is invalid, you use the input element selector. You then apply the pseudo-class selector called invalid.
+
+```css
+      <style>
+        input:focus:invalid{
+          border: 2px solid red;
+        }
+      </style>
+```
