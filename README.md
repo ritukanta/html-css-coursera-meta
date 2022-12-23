@@ -408,25 +408,20 @@
 ### Top Navbar Layout
 
 - Websites often have a top navbar layout to provide a set of essential anchor links to the user. These typically link to the main areas of the website, such as product pages. This provides the visitor to the website with a consistent navigation experience.<br>
-  ![Navbar layout](../main/images/navbar-layout.png)
 
 ### Carousel Layout
 
 - Product and online-shopping websites often use a large carsoul on their homepage to highlight their featured products, offers and discounts. The carousel contains content items that will keep rotating through the carousel area at a fixed interval.<br>
-  ![Carousel layout](../main/images/carousel-layout.png)
 
 ### Blog Layout
 
 - The blog layout is used to feature multiple content items of differing importance. It is often seen on news websites where new articles will appear on the page each day based on current happenings.<br>
-  ![Blog layout 1](../main/images/blog-layout-1.png)
 
 - The layout typically features different-sized feature areas followed by a series of article summary areas that link to full articles.
-  ![Blog layout 2](../main/images/blog-layout-2.png)
 
 ### Dashboard Layout
 
 - Dashboard layouts are often used in enterprise software for managing various web applications. They typically feature a sidebar for navigation with the main content area containing forms for configuration or reporting data such as graphs and tables. This trendy layout provides a good user experience for business users.
-  ![Dashboard layout](../main/images/dashboard-layout.png)
 
 ## UX with Meta tags
 
@@ -621,6 +616,11 @@
 - [Bootstrap Layout Examples](https://getbootstrap.com/docs/5.2/examples/)
 
 # User Input and Forms
+
+1. [Forms and Validation](#forms-and-validation)
+1. [Input Types Cheatsheet](#input-typecheat-sheet)
+1. [Creating a Form](#creating-a-form)
+1. [Making the most of client-side validation](#making-the-most-of-client-side-validation)
 
 ## Forms and Validation
 
@@ -852,6 +852,16 @@
 
 ## Creating a Form
 
-## Making the most of client-side validation
+- In this lesson, we are going to learn how to make a simple sign up form for user accounts for a online delivery website.
 
-##
+- For this I'll start off by the <code>form</code> element with the basic HTML document.
+
+- But you need to send this form using an <code>HTTP</code> post request, it improves the data security of our form. For the user account sign up, the online food delivery website needs user's first name, last name, and email address and of course, the form also needs a field for password and another field to confirm the password.
+
+- I'll create a form with five fields in total. I'll start by adding the <code>input</code> elements. First, I will set up six <code>div</code> elements, one for each input element and one for the signup button. The div elements will cause each field of the form to display in its own <code>CSS</code> block. Then I'll create the in same manner as <code>forms/index.html</code> document.
+
+- After adding the <code>input</code> elements in each of div element, everything displays correctly. However we can improve the UX by informing the user what each field represents. To do this, I'll add a <code>label</code> element before each <code>input</code> element.
+
+- Now we should know the reason why we added the ID attribute in the input element earlier, because it allows us to associate a label with each input element. Also the labels improve the user experience and assist accessibility software and understanding the form. In the last div element, add the <code>button</code> element and set the type attribute to "submit".
+
+## Making the most of client-side validation
